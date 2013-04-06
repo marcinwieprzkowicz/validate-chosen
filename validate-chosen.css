@@ -1,0 +1,44 @@
+.validateChosen {
+}
+
+.validateChosen .chzn-drop {
+  display: none;
+}
+
+.validateChosen .chzn-drop .active-result {
+  display: none !important;
+}
+
+.validateChosen.valid .chzn-drop,
+.validateChosen.invalid .chzn-drop {
+  display: block;
+}
+
+.validateChosen .chzn-drop .no-results {
+  line-height: 20px;
+  height: 20px;
+  padding: 7px 7px 7px 34px;
+  position: relative;
+}
+
+.validateChosen.valid .chzn-drop .no-results {
+  cursor: pointer;
+}
+
+  .validateChosen .chzn-drop .no-results:before {
+    background: url(icons.png) no-repeat;
+    content: ' ';
+    display: block;
+    height: 20px;
+    left: 7px;
+    position: absolute;
+    width: 20px;
+    top: 7px;
+  }
+
+  .validateChosen.invalid .chzn-drop .no-results:before {
+  }
+
+  .validateChosen.valid .chzn-drop .no-results:before {
+    background-position: 0 -21px;
+  }
