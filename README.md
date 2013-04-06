@@ -37,7 +37,10 @@ document.getElements('.validateChosen').validateChosen({
 </table>
 
 ## Requirements
-Validate chosen is written in Mootools(support 1.3+) and uses **[chosen script](https://github.com/julesjanssen/chosen)**.
+Validate chosen is written in Mootools(support 1.3+) and uses **[Chosen script](https://github.com/julesjanssen/chosen)**.
+
+## Acknowledgement
+Many thanks to Matt Bentley from **[CanIRank](http://www.canirank.com/)** for allowing me to publish this library.
 
 ## License
 Validate chosen is released under an MIT License.
