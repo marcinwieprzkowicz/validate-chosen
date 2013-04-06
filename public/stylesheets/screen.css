@@ -10,7 +10,7 @@ body {
 
 .mCont {
   margin: 0 auto;
-  width: 660px;
+  width: 680px;
 }
 
 #body-wrapper {
@@ -48,7 +48,7 @@ body {
 
 #nav {
   position: fixed;
-  width: 119px;
+  width: 139px;
   top: 108px;
 }
 
