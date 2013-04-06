@@ -3,12 +3,14 @@ Checks the input string by custom function and add to the results if passed the 
 
 ## Setup
 
+### Html
 ```html
 <div class="validateChosen">
   <select multiple="multiple" data-placeholder="Placeholder"></select>
 </div>
 ```
 
+### JavaScript
 ```javascript
 document.getElements('.validateChosen').validateChosen({
   validator: function(text){
