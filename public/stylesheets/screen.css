@@ -5,7 +5,7 @@ body {
 }
 
 .validateChosen .chzn-drop .no-results:before {
-  background-image: url(https://raw.github.com/marcinwieprzkowicz/validate-chosen/master/icons.png)
+  background-image: url(../images/icons.png)
 }
 
 .mCont {
@@ -103,7 +103,6 @@ body {
   
   #primary-cont .code {
     background: #e8e8e8;
-    font-size: 1.2em;
     left: -20px;
     line-height: 1.4em;
     margin: 0 0 15px 0;
@@ -121,6 +120,7 @@ body {
     font-family: 'Source Code Pro', sans-serif;
     line-height: 1.25em;
     margin: 0;
+    white-space: pre-wrap;
   }
   
   #primary-cont .code .snippet {

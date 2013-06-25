@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="public/stylesheets/validate-chosen.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="public/stylesheets/screen.css" type="text/css" media="screen, projection" />
 
-    <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
-    <script src="public/javascripts/mootools-more-1.4.0.1.js"></script>
-    <script src="public/javascripts/chosen.min.js"></script>
-    <script type="text/javascript" src="https://raw.github.com/marcinwieprzkowicz/validate-chosen/master/validate-chosen.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
+    <script type="text/javascript" src="public/javascripts/mootools-more-1.4.0.1.js"></script>
+    <script type="text/javascript" src="public/javascripts/chosen.min.js"></script>
+    <script type="text/javascript" src="public/javascripts/validate-chosen.js"></script>
 
     <title>Validate chosen</title>
   </head>
@@ -71,7 +71,7 @@
                 <div class="snippet">
                   <h3>JavaScript</h3>
 <pre>
-document.getElements('.validateChosen').validateChosen({
+document.getElements('.validateChosen').set('validateChosen', {
   validator: function(text){
     ...
     return true | false;
@@ -140,7 +140,7 @@ document.getElements('.validateChosen').validateChosen({
 
     <script type="text/javascript">
       //<![CDATA[
-        document.getElements('.validateChosen').validateChosen({
+        document.getElements('.validateChosen').set('validateChosen', {
           validator: function(text){
             var emailRegExp = /(?:[a-z0-9!#$%&'*+\/=?\^_`{|}~\-]+(?:\.[a-z0-9!#$%&'*+\/=?\^_`{|}~\-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9\-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9\-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9\-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/i;
             return text.test(emailRegExp);
