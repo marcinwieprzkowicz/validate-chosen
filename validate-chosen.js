@@ -1,19 +1,28 @@
 /*
 
- Checks the input string by custom function and add to the results if passed the validation
+ Checks the input string by custom function and add to the results list if passed the validation
 
- version    1.0
- author     Marcin Wieprzkowicz (wiemar@o2.pl)
+ version    1.1
+ author     Marcin Wieprzkowicz (marcin.wieprzkowicz@gmail.com)
 
 */
 
-Elements.implement({
-  validateChosen: function(options){
-    return this.each(function(el){
-      new ValidateChosen(el, options);
-    });
+
+Element.Properties.validateChosen = {
+  set: function (options) {
+    this.get('validateChosen').setOptions(options);
+    return this;
+  },
+  get: function () {
+    var vc = this.retrieve('validateChosen');
+    if (!vc) {
+      vc = new ValidateChosen(this);
+      this.store('validateChosen', vc);
+    }
+    return vc;
   }
-});
+};
+
 
 var ValidateChosen = new Class({
 
@@ -114,13 +123,11 @@ var ValidateChosen = new Class({
   },
 
   setValid: function(){
-    console.log('valid');
     this.elements.rootEl.removeClass('invalid');
     this.elements.rootEl.addClass('valid');
   },
 
   setInvalid: function(){
-    console.log('invalid');
     this.elements.rootEl.removeClass('valid');
     this.elements.rootEl.addClass('invalid');
   },

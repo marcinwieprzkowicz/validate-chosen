@@ -15,10 +15,10 @@ See **[demo](http://marcinwieprzkowicz.github.com/validate-chosen/)**.
 
 ### JavaScript
 ```javascript
-document.getElements('.validateChosen').validateChosen({
+document.getElements('.validateChosen').set('validateChosen', {
   validator: function(text){
     ...
-    return true|false;
+    return true | false;
   }
 });
 ```
